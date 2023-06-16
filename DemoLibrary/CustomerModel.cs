@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace DemoLibrary
 {
-    public class CustomerModel
+    // implements the ICustomerModel
+    // you can inherit from a base class, but only implement an interface
+    // inheritance implies that you are bringing code down with you
+    public class CustomerModel : ICustomerModel
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
